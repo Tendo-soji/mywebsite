@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #fff;
+        }
+        a {
+            text-decoration: none;
+            color: #f9a825;
+        }
+
+        /* Layout Containers */
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+        .sidebar {
+            background-color: #131324;
+            width: 25%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .main {
+            width: 75%;
+            padding: 30px;
+            background-color: #1b1b38;
+            box-sizing: border-box;
+        }
+
+        /* Sidebar Section */
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .info {
+            margin-bottom: 20px;
+        }
+        .info h2 {
+            margin: 0;
+            font-size: 22px;
+            color: #f9a825;
+        }
+        .info p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #aaa;
+        }
+        .skills {
+            margin-top: 20px;
+        }
+        .skill {
+            margin-bottom: 15px;
+        }
+        .skill-name {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .skill-bar {
+            background-color: #333;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .skill-bar div {
+            height: 100%;
+            background-color: #f9a825;
+        }
+
+        /* Main Content */
+        .main-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .main-header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .main-header p {
+            color: #aaa;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .stat {
+            flex: 1;
+            padding: 10px;
+        }
+        .stat h2 {
+            color: #f9a825;
+            font-size: 24px;
+            margin: 0;
+        }
+        .stat p {
+            color: #aaa;
+            margin: 0;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .service {
+            background-color: #252545;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .service h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #f9a825;
+        }
+        .service p {
+            font-size: 14px;
+            color: #aaa;
+        }
+        .service a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #f9a825;
+            color: #000;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-img">
+            <div class="info">
+                <h2>Arthur Carter</h2>
+                <p>Front-End Developer</p>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar"><div style="width: 90%;"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar"><div style="width: 95%;"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar"><div style="width: 75%;"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">PHP</div>
+                    <div class="skill-bar"><div style="width: 65%;"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">WordPress</div>
+                    <div class="skill-bar"><div style="width: 85%;"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+            <div class="main-header">
+                <h1>Discover My Amazing Art Space!</h1>
+                <p><code>I build iOS and Android Applications.</code></p>
+                <a href="#" style="padding: 10px 20px; background: #f9a825; color: #000; text-decoration: none; border-radius: 5px;">Explore Now</a>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <h2>10+</h2>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat">
+                    <h2>143</h2>
+                    <p>Completed Projects</p>
+                </div>
+                <div class="stat">
+                    <h2>114</h2>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat">
+                    <h2>20+</h2>
+                    <p>Honors and Awards</p>
+                </div>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="#">Order Now</a>
+                </div>
+                <div class="service">
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="#">Order Now</a>
+                </div>
+                <div class="service">
+                    <h3>Sound Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="#">Order Now</a>
+                </div>
+                <div class="service">
+                    <h3>Game Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="#">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
